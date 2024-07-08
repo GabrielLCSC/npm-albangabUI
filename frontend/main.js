@@ -1,6 +1,6 @@
 // main.js
 
-import Button from '../src';
+import Button from '../src/button';
 
 // Créer une instance de Button
 const button = Button({
