@@ -28,4 +28,4 @@ jobs:
       - name: "Publish to NPM"
         uses: JS-DevTools/npm-publish@v2
         with:
-          token: ${{ secrets.AGUI_TOKEN }}
+          token: ${{ secrets.NPM_TOKEN }}
