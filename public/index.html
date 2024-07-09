@@ -9,7 +9,7 @@
 <body>
   <button class="my-button 🥇">Bouton secondaire</button>
   <button class="my-button 🥈">Bouton secondaire</button>
-
+  <input type="text" class="🎹" placeholder="Entrez du texte...">
   <div id="button-container"></div>
   <script type="module">
     import Button from './button.js'; // Chemin relatif à `button.js`
@@ -17,7 +17,7 @@
     const container = document.getElementById('button-container');
     const onClick = () => alert('Button clicked!');
     const buttonElement = Button({ variant: '🥇', text: 'Click Me', onClick });
-
+    
     container.appendChild(buttonElement);
   </script>
 </body>
