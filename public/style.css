@@ -1,6 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fw {
+  width: 100%;
+}
+
 /* public/styles.css */
 .alban-button {
-  width: fit-content;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
@@ -9,7 +18,6 @@
 }
 
 .gabriel-button {
-  width: fit-content;
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -75,9 +83,12 @@
 /* input */
 .🎹 {
   /* Exemple de classe emoji pour un clavier */
+}
+
+.alban-input {
   display: block;
-  width: 300px;
-  padding: 10px;
+  width: 100%;
+  padding: 0.7rem;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -114,6 +125,24 @@
 .📄 {
   font-size: 1rem;
   color: #666;
+
+}
+
+.alban-input::placeholder {
+  color: #afafaf;
+}
+
+.gabriel-input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+}
+
+.gabriel-input::placeholder {
+  color: #afafaf;
 }
 
 .🎉 {
