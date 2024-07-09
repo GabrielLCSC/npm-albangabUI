@@ -1,6 +1,6 @@
 // Button.js
 
-import '../frontend/style.css';
+import '../public/style.css';
 
 /**
  * Crée un bouton réutilisable avec une variante spécifiée.

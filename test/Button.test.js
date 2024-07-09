@@ -6,6 +6,7 @@ import Button from '../src/button'; // Assurez-vous que le chemin d'importation 
 describe('Test du composant Button', () => {
   let dom;
   let buttonElement;
+  let onClick;
 
   // Configurer jsdom avant chaque test
   beforeEach(() => {
@@ -17,7 +18,7 @@ describe('Test du composant Button', () => {
     global.window = dom.window;
 
     // Créer une fonction mock pour simuler le clic
-    const onClick = jest.fn();
+    onClick = jest.fn();
 
     // Créer un élément bouton avec le composant Button
     buttonElement = Button({ variant: '🥇', text: 'Click Me', onClick });
