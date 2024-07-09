@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Button Library</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <button class="my-button 🥇">Bouton secondaire</button>
-  <button class="my-button 🥈">Bouton secondaire</button>
-  <input type="text" class="🎹" placeholder="Entrez du texte...">
-  <div id="button-container"></div>
-  <script type="module">
-    import Button from './button.js'; // Chemin relatif à `button.js`
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Button Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="alban-button ✅">Valider</button>
+    <button class="gabriel-button ✅">Valider</button>
+    <button class="alban-button ❌">Annuler</button>
+    <button class="gabriel-button ❌">Annuler</button>
+    <button class="alban-button ⚫">Voir plus</button>
+    <button class="gabriel-button ⚫">Voir plus</button>
+    <button class="alban-button ⚪">Voir plus</button>
+    <button class="gabriel-button ⚪">Voir plus</button>
+    <input type="text" class="🎹" placeholder="Entrez du texte..." />
 
-    const container = document.getElementById('button-container');
-    const onClick = () => alert('Button clicked!');
-    const buttonElement = Button({ variant: '🥇', text: 'Click Me', onClick });
-    
-    container.appendChild(buttonElement);
-  </script>
-</body>
+    <script type="module">
+      import Button from "./button.js"; // Chemin relatif à `button.js`
+    </script>
+  </body>
 </html>
