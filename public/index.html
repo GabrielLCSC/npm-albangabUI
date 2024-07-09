@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Button Library</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Allez on va faire apparaitre ce bouton</h1>
+  <button class="my-button 🥇">Bouton secondaire</button>
+  <button class="my-button 🥈">Bouton secondaire</button>
+
   <div id="button-container"></div>
   <script type="module">
-    import Button from '../src/button.js';
+    import Button from './button.js'; // Chemin relatif à `button.js`
 
     const container = document.getElementById('button-container');
     const onClick = () => alert('Button clicked!');

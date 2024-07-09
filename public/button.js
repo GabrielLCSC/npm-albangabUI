@@ -1,7 +1,3 @@
-// Button.js
-
-import "./style.css";
-
 /**
  * Crée un bouton réutilisable avec une variante spécifiée.
  * @param {string} variant - La classe de variante du bouton (par exemple '🥇', '🥈').
@@ -12,7 +8,7 @@ import "./style.css";
 const Button = ({ variant, text, onClick }) => {
   const button = document.createElement("button");
   button.textContent = text;
-  button.className = `▶️ ${variant}`;
+  button.className = `my-button ${variant}`;
   button.addEventListener("click", onClick);
   return button;
 };
