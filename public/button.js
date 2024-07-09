@@ -5,11 +5,11 @@
  * @param {function} onClick - La fonction à appeler lors du clic sur le bouton.
  * @returns {HTMLElement} - Élément bouton créé.
  */
-const Button = ({ variant, text, onClick }) => {
+const Button = ({ variant, text }) => {
   const button = document.createElement("button");
   button.textContent = text;
-  button.className = `my-button ${variant}`;
-  button.addEventListener("click", onClick);
+  button.className = `alban-button ${variant}`;
+  button.className = `gabriel-button ${variant}`;
   return button;
 };
 
