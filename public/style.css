@@ -1,6 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fw {
+  width: 100%;
+}
+
+.wfit {
+  width: fit-content;
+}
+
 /* public/styles.css */
 .alban-button {
-  width: fit-content;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
@@ -9,7 +22,6 @@
 }
 
 .gabriel-button {
-  width: fit-content;
   border: none;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -75,17 +87,16 @@
 /* input */
 .🎹 {
   /* Exemple de classe emoji pour un clavier */
+}
+
+.alban-input {
   display: block;
-  width: 300px;
-  padding: 10px;
+  width: 100%;
+  padding: 0.7rem;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
-  margin: 2rem;
 }
-
-
 
 .🃏 {
   width: 300px;
@@ -99,7 +110,6 @@
   width: 100%;
   height: auto;
   display: block;
-  border-bottom: 1px solid #ddd;
 }
 
 .📝 {
@@ -108,7 +118,6 @@
 
 .📌 {
   font-size: 1.2rem;
-  margin-bottom: 8px;
 }
 
 .📄 {
@@ -116,23 +125,120 @@
   color: #666;
 }
 
+.alban-input::placeholder {
+  color: #afafaf;
+}
+
+.gabriel-input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+}
+
+.gabriel-input::placeholder {
+  color: #afafaf;
+}
+
 .🎉 {
   padding: 20px;
   text-align: center;
   font-size: 4em;
   text-decoration: underline;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.container{
-  width: 80%;
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-links {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  
-}
-div{
-  margin: 0.25rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 33px;
+  right: 20px;
+  z-index: 2;
+}
+
+.menu-toggle img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.form-test {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mt48 {
+  margin-top: 48px;
+}
+
+.test-container {
+  padding: 48px;
+}

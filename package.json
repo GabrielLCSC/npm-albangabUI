@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "serve": "node server.js",
-    "prebuild:types": "rimraf ./build",
-    "build:types": "tsc -p ./tsconfig.json --outDir build && api-extractor run"
+  "test": "jest",
+  "serve": "node server.js",
+  "prebuild:types": "rimraf ./build",
+  "build:types": "tsc -p ./tsconfig.json --outDir build && api-extractor run"
   },
   "repository": {
     "type": "git",
