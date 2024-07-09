@@ -1,9 +1,9 @@
 // __tests__/button.test.js
 
-import { JSDOM } from 'jsdom';
-import Button from '../src/button'; // Assurez-vous que le chemin d'importation est correct
+import { JSDOM } from "jsdom";
+import Button from "../src/Button"; // Assurez-vous que le chemin d'importation est correct
 
-describe('Test du composant Button', () => {
+describe("Test du composant Button", () => {
   let dom;
   let buttonElement;
   let onClick;
@@ -11,7 +11,7 @@ describe('Test du composant Button', () => {
   // Configurer jsdom avant chaque test
   beforeEach(() => {
     // Créer un environnement DOM simulé
-    dom = new JSDOM('<!doctype html><html><body></body></html>');
+    dom = new JSDOM("<!doctype html><html><body></body></html>");
 
     // Simuler globalement le DOM
     global.document = dom.window.document;
@@ -21,7 +21,7 @@ describe('Test du composant Button', () => {
     onClick = jest.fn();
 
     // Créer un élément bouton avec le composant Button
-    buttonElement = Button({ variant: '🥇', text: 'Click Me', onClick });
+    buttonElement = Button({ variant: "🥇", text: "Click Me", onClick });
 
     // Ajouter le bouton simulé au DOM simulé
     document.body.appendChild(buttonElement);
@@ -37,9 +37,9 @@ describe('Test du composant Button', () => {
     global.window = undefined;
   });
 
-  test('Crée un bouton avec le texte correct', () => {
+  test("Crée un bouton avec le texte correct", () => {
     // Vérifier que le texte du bouton est correct
-    expect(buttonElement.textContent).toBe('Click Me');
+    expect(buttonElement.textContent).toBe("Click Me");
 
     // Simuler un clic sur le bouton
     buttonElement.click();
