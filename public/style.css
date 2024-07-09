@@ -92,11 +92,7 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
-  margin: 2rem;
 }
-
-
 
 .🃏 {
   width: 300px;
@@ -110,7 +106,6 @@
   width: 100%;
   height: auto;
   display: block;
-  border-bottom: 1px solid #ddd;
 }
 
 .📝 {
@@ -119,13 +114,11 @@
 
 .📌 {
   font-size: 1.2rem;
-  margin-bottom: 8px;
 }
 
 .📄 {
   font-size: 1rem;
   color: #666;
-
 }
 
 .alban-input::placeholder {
@@ -150,18 +143,57 @@
   text-align: center;
   font-size: 4em;
   text-decoration: underline;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-.container{
-  width: 80%;
+.nav-links {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  
-}
-div{
-  margin: 0.25rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
