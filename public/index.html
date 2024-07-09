@@ -8,10 +8,11 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <nav class="nav">
         <img src="" alt="logo" />
         <button class="menu-toggle" aria-label="Toggle navigation">
-          <img src="../images/menu.png" alt="burger" />
+          <img class="icon-open" src="./images/menu.png" alt="1" />
+          <img class="icon-close" src="./images/croix.png" alt="2" />
         </button>
         <div class="nav-links">
           <a href="#">Home</a><a href="#">Projects</a><a href="#">Contact us</a>
@@ -64,9 +65,19 @@
         document.addEventListener("DOMContentLoaded", () => {
           const menuToggle = document.querySelector(".menu-toggle");
           const navLinks = document.querySelector(".nav-links");
+          const iconOpen = document.querySelector(".icon-open");
+          const iconClose = document.querySelector(".icon-close");
+
+          iconClose.style.display = "none"; // Hide close icon initially
 
           menuToggle.addEventListener("click", () => {
             navLinks.classList.toggle("active");
+            iconOpen.style.display = navLinks.classList.contains("active")
+              ? "none"
+              : "block";
+            iconClose.style.display = navLinks.classList.contains("active")
+              ? "block"
+              : "none";
           });
         });
       </script>
