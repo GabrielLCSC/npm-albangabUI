@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Button Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="my-button 🥇">Bouton secondaire</button>
+  <button class="my-button 🥈">Bouton secondaire</button>
+
+  <div id="button-container"></div>
+  <script type="module">
+    import Button from './button.js'; // Chemin relatif à `button.js`
+
+    const container = document.getElementById('button-container');
+    const onClick = () => alert('Button clicked!');
+    const buttonElement = Button({ variant: '🥇', text: 'Click Me', onClick });
+
+    container.appendChild(buttonElement);
+  </script>
+</body>
+</html>
