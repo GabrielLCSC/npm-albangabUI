@@ -7,43 +7,72 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-      <div class="container">
-        <h1 class="🎉">Les composants d'EmojiGAUI</h1>
-        <div>
-          <button class="alban-button ✅">Valider</button>
-
-    <div>
-      <button class="alban-button fw ✅">Valider</button>
-    </div>
-
-    <button class="gabriel-button ✅">Valider</button>
-    <button class="alban-button ❌">Annuler</button>
-    <button class="gabriel-button ❌">Annuler</button>
-    <button class="alban-button ⚫">Voir plus</button>
-    <button class="gabriel-button ⚫">Voir plus</button>
-    <button class="alban-button ⚪">Voir plus</button>
-    <button class="gabriel-button ⚪">Voir plus</button>
-
-    <input type="text" class="🎹" placeholder="Entrez du texte..." />
+    <header class="header">
+      <nav>
+        <img src="" alt="logo" />
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <img src="../images/menu.png" alt="burger" />
+        </button>
+        <div class="nav-links">
+          <a href="#">Home</a><a href="#">Projects</a><a href="#">Contact us</a>
         </div>
-
-    <input type="text" class="alban-input 🎹" placeholder="Nom" />
-    <input type="text" class="gabriel-input 🎹" placeholder="Nom" />
+      </nav>
+    </header>
 
     <div class="container">
-      <div class="🃏">
-        <img src="https://via.placeholder.com/300" alt="Card Image" class="🖼️">
-        <div class="📝">
-          <h3 class="📌">Card Title</h3>
-          <p class="📄">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero vitae nunc bibendum, id tristique nisi faucibus. Sed sit amet enim eget sem gravida sollicitudin. Integer luctus ex at tristique tempus.
-          </p>
+      <h1 class="🎉">Les composants d'EmojiGAUI</h1>
+      <div>
+        <button class="alban-button ✅">Valider</button>
+
+        <div>
+          <button class="alban-button fw ✅">Valider</button>
+        </div>
+
+        <button class="gabriel-button ✅">Valider</button>
+        <button class="alban-button ❌">Annuler</button>
+        <button class="gabriel-button ❌">Annuler</button>
+        <button class="alban-button ⚫">Voir plus</button>
+        <button class="gabriel-button ⚫">Voir plus</button>
+        <button class="alban-button ⚪">Voir plus</button>
+        <button class="gabriel-button ⚪">Voir plus</button>
+
+        <input type="text" class="🎹" placeholder="Entrez du texte..." />
+      </div>
+
+      <input type="text" class="alban-input 🎹" placeholder="Nom" />
+      <input type="text" class="gabriel-input 🎹" placeholder="Nom" />
+
+      <div class="container">
+        <div class="🃏">
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Card Image"
+            class="🖼️"
+          />
+          <div class="📝">
+            <h3 class="📌">Card Title</h3>
+            <p class="📄">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              convallis libero vitae nunc bibendum, id tristique nisi faucibus.
+              Sed sit amet enim eget sem gravida sollicitudin. Integer luctus ex
+              at tristique tempus.
+            </p>
+          </div>
         </div>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const navLinks = document.querySelector(".nav-links");
+
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+        });
+      </script>
+      <script type="module">
+        import Button from "./button.js"; // Chemin relatif à `button.js`
+      </script>
     </div>
-    <script type="module">
-    </script>
-      </div>
   </body>
 </html>

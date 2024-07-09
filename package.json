@@ -1,11 +1,11 @@
 {
   "name": "npm-albangabui",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "serve": "node server.js"
   },
   "repository": {
