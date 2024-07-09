@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.wfit {
+  width: fit-content;
+}
+
 /* public/styles.css */
 .alban-button {
   font-size: 1rem;
@@ -223,4 +227,18 @@
     left: 0;
     z-index: 1;
   }
+}
+
+.form-test {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mt48 {
+  margin-top: 48px;
+}
+
+.test-container {
+  padding: 48px;
 }
