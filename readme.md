@@ -90,7 +90,7 @@ Carte :
 .📄 : Paragraphe ou texte descriptif dans la carte.
 Container :
 
-.🎉 : Style pour les titres principaux ou les sections importantes.
+.🎉 : Style pour les titres principaux ou les sections importantes ainsi qu'un header.
 Personnalisation
 Pour personnaliser davantage les styles, modifiez directement le fichier styles.css de votre bibliothèque EmojiGAUI.
 
